@@ -16,24 +16,29 @@
                                                     <img src="<?php echo $item['item_image'] ?? "./assets/images/product-images/product-image1" ?>" alt="<?php echo $item['item_name'] ?? "Unknown" ?>" title="" />
                                                 </a>
                                                 <div class="product-details">
-                                                    <a href="#" class="remove"><i class="anm anm-times-l" aria-hidden="true"></i></a>
-                                                    <a href="#" class="edit-i remove">
-                                                        <!-- <i class="anm anm-edit" aria-hidden="true"></i></a> -->
-                                                        <a class="pName" href="cart.php"><?php echo $item['item_name'] ?? "Unknown" ?></a>
-                                                        <!-- <div class="variant-cart">Black / XL</div> -->
-                                                        <div class="wrapQtyBtn">
-                                                            <div class="qtyField">
-                                                                <span class="label">Qty:</span>
-                                                                <a class="qtyBtn minus" href="javascript:void(0);"><i class="fa anm anm-minus-r" aria-hidden="true"></i></a>
-                                                                <input type="text" id="Quantity" name="quantity" value="1" class="product-form__input qty" />
-                                                                <a class="qtyBtn plus" href="javascript:void(0);"><i class="fa anm anm-plus-r" aria-hidden="true"></i></a>
-                                                            </div>
+                                                    <form method="post">
+                                                        <button type="submit" name="delete-cart-submit" class="no-style">
+                                                            <input type="hidden" value="<?php echo $item['item_id'] ?? 0; ?>" name="item_id">
+                                                            <div class="remove"><i class="icon icon anm anm-times-l"></i></div>
+                                                        </button>
+                                                    </form>
+
+                                                    <!-- <a href="#" class="remove"><i class="anm anm-times-l" aria-hidden="true"></i></a> -->
+                                                    <a class="pName" href="cart.php"><?php echo $item['item_name'] ?? "Unknown" ?></a>
+                                                    <!-- <div class="variant-cart">Black / XL</div> -->
+                                                    <div class="wrapQtyBtn">
+                                                        <div class="qtyField">
+                                                            <span class="label">Qty:</span>
+                                                            <a class="qtyBtn minus" href="javascript:void(0);"><i class="fa anm anm-minus-r" aria-hidden="true"></i></a>
+                                                            <input type="text" id="Quantity" name="quantity" value="1" class="product-form__input qty" />
+                                                            <a class="qtyBtn plus" href="javascript:void(0);"><i class="fa anm anm-plus-r" aria-hidden="true"></i></a>
                                                         </div>
-                                                        <div class="priceRow">
-                                                            <div class="product-price">
-                                                                <span class="money">₱<?php echo $item['item_price'] ?? "0.00" ?></span>
-                                                            </div>
+                                                    </div>
+                                                    <div class="priceRow">
+                                                        <div class="product-price">
+                                                            <span class="money">₱<?php echo $item['item_price'] ?? "0.00" ?></span>
                                                         </div>
+                                                    </div>
                                                 </div>
                                             </li>
                                     <?php

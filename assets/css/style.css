@@ -125,6 +125,12 @@ input, select { height:40px; padding:0 10px; }
 input[type="checkbox"], input[type="radio"] { width:auto; height:auto; }
 input[type="checkbox"]:focus, input[type="radio"]:focus { outline:0; box-shadow:none; }
 
+button.no-style {
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+
 .text-left { text-align:left !important; }
 .text-center { text-align:center !important; }
 .text-right { text-align:right !important; }
@@ -263,7 +269,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder { opacity:1; -ms-fil
 .mini-products-list li .pName { color:#000; font-size:13px; white-space:normal; text-decoration:none; display:block; line-height:normal; margin-right:18px; margin-bottom:0; }
 .mini-products-list li .pName:hover { color:#222; }
 .mini-products-list li .product-details { float:left; width:75%; padding-left:15px; text-align:left; }
-.mini-products-list li .remove { color:#5c5c5c; float:right; font-size:14px; padding:0 2px 0 7px; margin-top:0; text-decoration:none; }
+.mini-products-list li .remove { color:#5c5c5c; float:right; font-size:14px; padding:0 2px 0 7px; margin-top:0; margin-left:180px; text-decoration:none; }
 .mini-products-list li .remove:hover { color:#000; }
 .mini-products-list li .edit-i.remove { font-size:11px; padding-top:1px; }
 .mini-products-list li .priceRow { margin:10px 0 0; }
