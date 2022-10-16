@@ -307,21 +307,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder { opacity:1; -ms-fil
 	#siteNav > li > a:hover:hover,
 	#siteNav > li > a:hover { color:#339498; }
 	
-	#siteNav > li .megamenu { opacity:0; visibility:hidden; padding:25px 25px 0; width:100%; position:absolute; top:59px; left:0; z-index:999; background-color:#fff; box-shadow: 2px 2px 1px 0px rgba(0,0,0,0.3); -webkit-box-shadow: 2px 2px 1px 0px rgba(0,0,0,0.3); pointer-events:none; -ms-transition:all 0.3s ease; -webkit-transition:all 0.3s ease; transition:all 0.3s ease; border:1px solid #eee; max-height:600px; overflow:auto; }
-	#siteNav > li .megamenu ul { padding:0; list-style:none; }
-	#siteNav > li:hover > .megamenu { top:40px; opacity:1; visibility:visible; pointer-events:visible; }
-	#siteNav > li .megamenu li.lvl-1 { margin-bottom:25px; }
-	
-	#siteNav > li .megamenu li.lvl-1 a.lvl-1 { color:#000; font-size:14px; text-transform:uppercase; padding:0 0 8px; font-weight:600; }
-	#siteNav > li .megamenu li.lvl-1 li .site-nav { color:#000; padding:5px 0; font-weight:400; }
-	
-	#siteNav > li .megamenu li.lvl-1 li .site-nav:hover { color:#000; }
-	#siteNav > li .megamenu li.lvl-1 li .site-nav:before { content: ""; display:inline-block; width:0px; height:2px; vertical-align:middle; background-color:#000; -ms-transition:all 0.3s ease-in-out; -webkit-transition:all 0.3s ease-in-out; transition:all 0.3s ease-in-out; }
-	#siteNav > li .megamenu li.lvl-1 li .site-nav:hover:before { width:5px; margin-right:3px; }
-	
-	#siteNav > li .megamenu.style4 { background-repeat:no-repeat; background-size:auto 100%; }
-	#siteNav > li .megamenu .imageCol { padding-bottom:25px; }
-	
 	#siteNav > li ul.dropdown li a .anm { position:absolute; right:10px; top:10px; }
 	
 	#siteNav a .lbl { color:#ffffff; font-size:10px; font-weight:400; letter-spacing:0; line-height:1; text-transform:uppercase; display:inline-block; padding:2px 4px; border-radius:3px; background-color:#f00; box-shadow:0 0 3px rgba(0,0,0,0.3); -webkit-box-shadow:0 0 3px rgba(0,0,0,0.3); position:relative; vertical-align:middle; }	

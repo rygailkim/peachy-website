@@ -53,8 +53,7 @@ CREATE TABLE IF NOT EXISTS `product` (
   `item_color` varchar(24) NOT NULL,
   `item_rating` int(11) NOT NULL,
   `item_stock` int(11) NOT NULL,
-  `item_register` datetime DEFAULT NULL,
-  PRIMARY KEY (`item_id`)
+  `item_register` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -127,7 +126,7 @@ CREATE TABLE IF NOT EXISTS `user` (
 --
 
 INSERT INTO `user` (`user_id`, `first_name`, `last_name`, `register_date`) VALUES
-(1, 'Daily', 'Tuition', '2020-03-28 13:07:17'),
+(1, 'Ryanne', 'Kim', '2020-03-28 13:07:17'),
 (2, 'Akshay', 'Kashyap', '2020-03-28 13:07:17');
 
 -- --------------------------------------------------------

@@ -14,8 +14,8 @@
     <!-- Bootstap CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <!-- Main Style CSS -->
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/style.css?v=<?php echo time(); ?>" />
+    <link rel=" stylesheet" href="assets/css/responsive.css?v=<?php echo time(); ?>" />
 
     <?php
     require('functions.php')

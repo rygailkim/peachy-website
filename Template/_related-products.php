@@ -1,3 +1,16 @@
+<?php
+
+shuffle($product_shuffle);
+
+// request method post
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
+    if (isset($_POST['related_products_submit'])) {
+        // call method addToCart
+        $Cart->addToCart($_POST['user_id'], $_POST['item_id']);
+    }
+}
+?>
+
 <!--Related Product Slider-->
 <div class="related-product grid-products">
     <header class="section-header">
@@ -31,7 +44,7 @@
                     <form class="variants add" method="post">
                         <input type="hidden" name="item_id" value="<?php echo $item['item_id'] ?? '1'; ?>">
                         <input type="hidden" name="user_id" value="<?php echo 1; ?>">
-                        <button name="featured_products_submit" class="btn btn-addto-cart" type="button" tabindex="0">
+                        <button name="featured_products_submit" class="btn btn-addto-cart" type="submit" tabindex="0">
                             Add To Cart
                         </button>
                     </form>
@@ -112,7 +125,7 @@
 
                 <!-- Start product button -->
                 <form class="variants add" action="#" method="post">
-                    <button class="btn btn-addto-cart" type="button" tabindex="0">
+                    <button class="btn btn-addto-cart" type="submit" tabindex="0">
                         Add to Cart
                     </button>
                 </form>

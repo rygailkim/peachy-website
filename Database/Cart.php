@@ -19,11 +19,14 @@ class Cart
                 // "Insert into cart(user_id) values (0)"
                 // get table columns
                 $columns = implode(',', array_keys($params));
+                print_r($columns);
 
                 $values = implode(',', array_values($params));
+                print_r($values);
 
                 // create sql query
                 $query_string = sprintf("INSERT INTO %s(%s) VALUES(%s)", $table, $columns, $values);
+                // echo $query_string;
 
                 // execute query
                 $result = $this->db->con->query($query_string);

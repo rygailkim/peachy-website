@@ -55,7 +55,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                                                 <form class="variants add" method="post">
                                                     <input type="hidden" name="item_id" value="<?php echo $item['item_id'] ?? '1'; ?>">
                                                     <input type="hidden" name="user_id" value="<?php echo 1; ?>">
-                                                    <button name="featured_products_submit" class="btn btn-addto-cart" type="button" tabindex="0">
+                                                    <button name="featured_products_submit" class="btn btn-addto-cart" type="submit" tabindex="0">
                                                         Add To Cart
                                                     </button>
                                                 </form>
@@ -136,8 +136,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                                             <!-- end product image -->
 
                                             <!-- Start product button -->
-                                            <form class="variants add" action="#" method="post">
-                                                <button class="btn btn-addto-cart" type="button" tabindex="0">
+                                            <form class="variants add" method="post">
+                                                <button class="btn btn-addto-cart" type="submit" tabindex="0">
                                                     Add To Cart
                                                 </button>
                                             </form>
@@ -226,10 +226,10 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                                                 <!-- end product image -->
 
                                                 <!-- Start product button -->
-                                                <form class="variants add" action="#" method="post">
+                                                <form class="variants add" method="post">
                                                     <input type="hidden" name="item_id" value="<?php echo $item['item_id'] ?? '1'; ?>">
                                                     <input type="hidden" name="user_id" value="<?php echo 1; ?>">
-                                                    <button name='featured_products_submit' class="btn btn-addto-cart" type="button" tabindex="0">
+                                                    <button name="featured_products_submit" class="btn btn-addto-cart" type="submit" tabindex="0">
                                                         Add To Cart
                                                     </button>
                                                 </form>
@@ -312,8 +312,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                                             <!-- end product image -->
 
                                             <!-- Start product button -->
-                                            <form class="variants add" action="#" method="post">
-                                                <button class="btn btn-addto-cart" type="button" tabindex="0">
+                                            <form class="variants add" method="post">
+                                                <button class="btn btn-addto-cart" type="submit" tabindex="0">
                                                     Add To Cart
                                                 </button>
                                             </form>
@@ -378,8 +378,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                                             <!-- end product image -->
 
                                             <!-- Start product button -->
-                                            <form class="variants add" action="#" method="post">
-                                                <button class="btn btn-addto-cart" type="button" tabindex="0">
+                                            <form class="variants add" method="post">
+                                                <button class="btn btn-addto-cart" type="submit" tabindex="0">
                                                     Add To Cart
                                                 </button>
                                             </form>
@@ -440,8 +440,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                                             <!-- end product image -->
 
                                             <!-- Start product button -->
-                                            <form class="variants add" action="#" method="post">
-                                                <button class="btn btn-addto-cart" type="button" tabindex="0">
+                                            <form class="variants add" method="post">
+                                                <button class="btn btn-addto-cart" type="submit" tabindex="0">
                                                     Add To Cart
                                                 </button>
                                             </form>
@@ -501,8 +501,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                                             <!-- end product image -->
 
                                             <!-- Start product button -->
-                                            <form class="variants add" action="#" method="post">
-                                                <button class="btn btn-addto-cart" type="button" tabindex="0">
+                                            <form class="variants add" method="post">
+                                                <button class="btn btn-addto-cart" type="submit" tabindex="0">
                                                     Add To Cart
                                                 </button>
                                             </form>
@@ -564,8 +564,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                                             <!-- end product image -->
 
                                             <!-- Start product button -->
-                                            <form class="variants add" action="#" method="post">
-                                                <button class="btn btn-addto-cart" type="button" tabindex="0">
+                                            <form class="variants add" method="post">
+                                                <button class="btn btn-addto-cart" type="submit" tabindex="0">
                                                     Add To Cart
                                                 </button>
                                             </form>
@@ -626,8 +626,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                                             <!-- end product image -->
 
                                             <!-- Start product button -->
-                                            <form class="variants add" action="#" method="post">
-                                                <button class="btn btn-addto-cart" type="button" tabindex="0">
+                                            <form class="variants add" method="post">
+                                                <button class="btn btn-addto-cart" type="submit" tabindex="0">
                                                     Add To Cart
                                                 </button>
                                             </form>

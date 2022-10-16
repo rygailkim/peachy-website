@@ -164,7 +164,7 @@ foreach ($product->getData() as $item) :
                                         </div>
                                     </div>
                                     <div class="product-form__item--submit">
-                                        <button type="button" name="add" class="btn product-form__cart-submit">
+                                        <button type="submit" name="add" class="btn product-form__cart-submit">
                                             <span>Add to cart</span>
                                         </button>
                                     </div>

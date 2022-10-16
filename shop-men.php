@@ -105,7 +105,7 @@ include('header.php')
                                                 </a>
                                                 <!-- Start product button -->
                                                 <form action="#" method="post">
-                                                    <button class="btn btn--secondary cartIcon btn-addto-cart" type="button">
+                                                    <button class="btn btn--secondary cartIcon btn-addto-cart" type="submit">
                                                         <i class="icon anm anm-bag-l"></i>
                                                     </button>
                                                 </form>
@@ -199,7 +199,7 @@ include('header.php')
                                             </a>
                                             <!-- Start product button -->
                                             <form action="#" method="post">
-                                                <button class="btn btn--secondary cartIcon btn-addto-cart" type="button">
+                                                <button class="btn btn--secondary cartIcon btn-addto-cart" type="submit">
                                                     <i class="icon anm anm-bag-l"></i>
                                                 </button>
                                             </form>

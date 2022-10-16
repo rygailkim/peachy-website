@@ -25,7 +25,51 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr class="cart__row border-bottom line1 cart-flex border-top">
+                            <?php foreach ($product->getData(table: 'cart') as $item) :
+                                // print_r($item);
+                                $cart = $product->getProduct($item['item_id']);
+                                $subTotal[] = array_map(function ($item) {
+                            ?>
+                                    <tr class="cart__row border-bottom line1 cart-flex border-top">
+                                        <td class="cart__image-wrapper cart-flex-item">
+                                            <a href="#"><img class="cart__image" src="<?php echo $item['item_image'] ?? "./assets/images/product-images/product-image1" ?>" alt="Product" /></a>
+                                        </td>
+                                        <td class="cart__meta small--text-left cart-flex-item">
+                                            <div class="list-view-item__title">
+                                                <a href="#"><?php echo $item['item_name'] ?? "Unknown" ?></a>
+                                            </div>
+                                            <!-- 
+                                            <div class="cart__meta-text">
+                                                Color: Navy<br />
+                                                Size: Small<br />
+                                            </div> -->
+                                        </td>
+                                        <td class="cart__price-wrapper cart-flex-item">
+                                            <span class="money">₱<?php echo $item['item_price'] ?? "0.00" ?></span>
+                                        </td>
+                                        <td class="cart__update-wrapper cart-flex-item text-right">
+                                            <div class="cart__qty text-center">
+                                                <div class="qtyField">
+                                                    <a class="qtyBtn minus" href="javascript:void(0);"><i class="icon icon-minus"></i></a>
+                                                    <input class="cart__qty-input qty" type="text" name="updates[]" id="qty" value="1" pattern="[0-9]*" />
+                                                    <a class="qtyBtn plus" href="javascript:void(0);"><i class="icon icon-plus"></i></a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="text-right small--hide cart-price">
+                                            <div><span class="money">₱735.00</span></div>
+                                        </td>
+                                        <td class="text-center small--hide">
+                                            <a href="#" class="btn btn--secondary cart__remove" title="Remove tem"><i class="icon icon anm anm-times-l"></i></a>
+                                        </td>
+                                    </tr>
+                            <?php
+                                    return $item['item_price'];
+                                }, $cart); //closing array_map function
+                            endforeach;
+                            // print_r($subTotal);
+                            ?>
+                            <!-- <tr class="cart__row border-bottom line1 cart-flex border-top">
                                 <td class="cart__image-wrapper cart-flex-item">
                                     <a href="#"><img class="cart__image" src="assets/images/product-images/product-image1.jpg" alt="Elastic Waist Dress - Navy / Small" /></a>
                                 </td>
@@ -56,63 +100,7 @@
                                 <td class="text-center small--hide">
                                     <a href="#" class="btn btn--secondary cart__remove" title="Remove tem"><i class="icon icon anm anm-times-l"></i></a>
                                 </td>
-                            </tr>
-                            <tr class="cart__row border-bottom line1 cart-flex border-top">
-                                <td class="cart__image-wrapper cart-flex-item">
-                                    <a href="#"><img class="cart__image" src="assets/images/product-images/product-image3.jpg" alt="3/4 Sleeve Kimono Dress" /></a>
-                                </td>
-                                <td class="cart__meta small--text-left cart-flex-item">
-                                    <div class="list-view-item__title">
-                                        <a href="#">3/4 Sleeve Kimono Dress</a>
-                                    </div>
-                                </td>
-                                <td class="cart__price-wrapper cart-flex-item">
-                                    <span class="money">₱735.00</span>
-                                </td>
-                                <td class="cart__update-wrapper cart-flex-item text-right">
-                                    <div class="cart__qty text-center">
-                                        <div class="qtyField">
-                                            <a class="qtyBtn minus" href="javascript:void(0);"><i class="icon icon-minus"></i></a>
-                                            <input class="cart__qty-input qty" type="text" name="updates[]" id="qty" value="1" pattern="[0-9]*" />
-                                            <a class="qtyBtn plus" href="javascript:void(0);"><i class="icon icon-plus"></i></a>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td class="text-right small--hide cart-price">
-                                    <div><span class="money">₱735.00</span></div>
-                                </td>
-                                <td class="text-center small--hide">
-                                    <a href="#" class="btn btn--secondary cart__remove" title="Remove tem"><i class="icon icon anm anm-times-l"></i></a>
-                                </td>
-                            </tr>
-                            <tr class="cart__row border-bottom line1 cart-flex border-top">
-                                <td class="cart__image-wrapper cart-flex-item">
-                                    <a href="#"><img class="cart__image" src="assets/images/product-images/product-image6.jpg" alt="Minerva Dress black" /></a>
-                                </td>
-                                <td class="cart__meta small--text-left cart-flex-item">
-                                    <div class="list-view-item__title">
-                                        <a href="#">Minerva Dress black</a>
-                                    </div>
-                                </td>
-                                <td class="cart__price-wrapper cart-flex-item">
-                                    <span class="money">₱526.00</span>
-                                </td>
-                                <td class="cart__update-wrapper cart-flex-item text-right">
-                                    <div class="cart__qty text-center">
-                                        <div class="qtyField">
-                                            <a class="qtyBtn minus" href="javascript:void(0);"><i class="icon icon-minus"></i></a>
-                                            <input class="cart__qty-input qty" type="text" name="updates[]" id="qty" value="1" pattern="[0-9]*" />
-                                            <a class="qtyBtn plus" href="javascript:void(0);"><i class="icon icon-plus"></i></a>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td class="text-right small--hide cart-price">
-                                    <div><span class="money">₱735.00</span></div>
-                                </td>
-                                <td class="text-center small--hide">
-                                    <a href="#" class="btn btn--secondary cart__remove" title="Remove tem"><i class="icon icon anm anm-times-l"></i></a>
-                                </td>
-                            </tr>
+                            </tr> -->
                         </tbody>
                         <tfoot>
                             <tr>
@@ -120,11 +108,11 @@
                                     <a href="./" class="btn--link cart-continue"><i class="icon icon-arrow-circle-left"></i> Continue
                                         shopping</a>
                                 </td>
-                                <td colspan="3" class="text-right">
+                                <!-- <td colspan="3" class="text-right">
                                     <button type="submit" name="update" class="btn--link cart-update">
                                         <i class="fa fa-refresh"></i> Update
                                     </button>
-                                </td>
+                                </td> -->
                             </tr>
                         </tfoot>
                     </table>
@@ -142,7 +130,7 @@
                 <div class="solid-border">
                     <div class="row">
                         <span class="col-12 col-sm-6 cart__subtotal-title"><strong>Subtotal</strong></span>
-                        <span class="col-12 col-sm-6 cart__subtotal-title cart__subtotal text-right"><span class="money">₱735.00</span></span>
+                        <span class="col-12 col-sm-6 cart__subtotal-title cart__subtotal text-right"><span class="money">₱<?php echo isset($subTotal) ? $Cart->getSum($subTotal) : 0; ?></span></span>
                     </div>
                     <div class="cart__shipping">
                         Shipping &amp; taxes calculated at checkout
