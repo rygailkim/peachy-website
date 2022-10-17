@@ -7,7 +7,7 @@ foreach ($product->getData() as $item) :
         <!--Breadcrumb-->
         <div class="bredcrumbWrap">
             <div class="container breadcrumbs">
-                <a href="index.html" title="Back to the home page">Home</a><span aria-hidden="true">›</span><span><?php echo $item['item_name'] ?? "Unknown" ?></span>
+                <a href="index.php" title="Back to the home page">Home</a><span aria-hidden="true">›</span><span><?php echo $item['item_name'] ?? "Unknown" ?></span>
             </div>
         </div>
         <!--End Breadcrumb-->

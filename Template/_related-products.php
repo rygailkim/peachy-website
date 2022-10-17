@@ -56,7 +56,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                             <i class="icon anm anm-search-plus-r"></i>
                         </a>
                         <div class="wishlist-btn">
-                            <a class="wishlist add-to-wishlist" href="wishlist.html">
+                            <a class="wishlist add-to-wishlist" href="wishlist.php">
                                 <i class="icon anm anm-heart-l"></i>
                             </a>
                         </div>
@@ -137,7 +137,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         <i class="icon anm anm-search-plus-r"></i>
                     </a>
                     <div class="wishlist-btn">
-                        <a class="wishlist add-to-wishlist" href="wishlist.html">
+                        <a class="wishlist add-to-wishlist" href="wishlist.php">
                             <i class="icon anm anm-heart-l"></i>
                         </a>
                     </div>

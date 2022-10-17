@@ -105,7 +105,7 @@ $products = $product->getData();
             <div class="col-6 col-sm-6 col-md-4 col-lg-3 item grid-view-item style2 grid-view-item--sold-out">
                 <div class="grid-view_image">
                     <!-- start product image -->
-                    <a href="product-accordion.html" class="grid-view-item__link">
+                    <a href="product-accordion.php" class="grid-view-item__link">
                         <!-- image -->
                         <img class="grid-view-item__image primary blur-up lazyload" data-src="assets/images/product-images/product-image27.jpg" src="assets/images/product-images/product-image27.jpg" alt="image" title="product" />
                         <!-- End image -->
@@ -143,7 +143,7 @@ $products = $product->getData();
             <div class="col-6 col-sm-6 col-md-4 col-lg-3 grid-view-item style2 item">
                 <div class="grid-view_image">
                     <!-- start product image -->
-                    <a href="product-accordion.html" class="grid-view-item__link">
+                    <a href="product-accordion.php" class="grid-view-item__link">
                         <!-- image -->
                         <img class="grid-view-item__image primary blur-up lazyload" data-src="assets/images/product-images/product-image28.jpg" src="assets/images/product-images/product-image28.jpg" alt="image" title="product" />
                         <!-- End image -->

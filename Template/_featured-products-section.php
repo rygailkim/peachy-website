@@ -64,7 +64,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                                                         <i class="icon anm anm-search-plus-r"></i>
                                                     </a>
                                                     <div class="wishlist-btn">
-                                                        <a class="wishlist add-to-wishlist" href="wishlist.html">
+                                                        <a class="wishlist add-to-wishlist" href="wishlist.php">
                                                             <i class="icon anm anm-heart-l"></i>
                                                         </a>
                                                     </div>
@@ -78,7 +78,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                                             <div class="product-details text-center">
                                                 <!-- product name -->
                                                 <div class="product-name">
-                                                    <a href="./product-accordion.html"><?php echo $item['item_name'] ?? "Unknown" ?></a>
+                                                    <a href="./product-accordion.php"><?php echo $item['item_name'] ?? "Unknown" ?></a>
                                                 </div>
                                                 <!-- End product name -->
                                                 <!-- product price -->
@@ -120,7 +120,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                                         <!-- start product image -->
                                         <div class="product-image">
                                             <!-- start product image -->
-                                            <a href="./product-accordion.html">
+                                            <a href="./product-accordion.php">
                                                 <!-- image -->
                                                 <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image4.jpg" src="assets/images/product-images/product-image4.jpg" alt="image" title="product" />
                                                 <!-- End image -->
@@ -146,12 +146,12 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                                                     <i class="icon anm anm-search-plus-r"></i>
                                                 </a>
                                                 <div class="wishlist-btn">
-                                                    <a class="wishlist add-to-wishlist" href="wishlist.html">
+                                                    <a class="wishlist add-to-wishlist" href="wishlist.php">
                                                         <i class="icon anm anm-heart-l"></i>
                                                     </a>
                                                 </div>
                                                 <div class="compare-btn">
-                                                    <a class="compare add-to-compare" href="compare.html" title="Add to Compare">
+                                                    <a class="compare add-to-compare" href="compare.php" title="Add to Compare">
                                                         <i class="icon anm anm-random-r"></i>
                                                     </a>
                                                 </div>
@@ -164,7 +164,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                                         <div class="product-details text-center">
                                             <!-- product name -->
                                             <div class="product-name">
-                                                <a href="./product-accordion.html">Paper Dress</a>
+                                                <a href="./product-accordion.php">Paper Dress</a>
                                             </div>
                                             <!-- End product name -->
                                             <!-- product price -->
@@ -210,7 +210,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                                             <!-- start product image -->
                                             <div class="product-image">
                                                 <!-- start product image -->
-                                                <a href="./product-accordion.html">
+                                                <a href="./product-accordion.php">
                                                     <!-- image -->
                                                     <img class="primary blur-up lazyload" data-src="<?php echo $item['item_image'] ?? "./assets/images/product-images/product-image1" ?>" src="<?php echo $item['item_image'] ?? "./assets/images/product-images/product-image1" ?>" alt="image" title="product" />
                                                     <!-- End image -->
@@ -242,7 +242,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                                                         <i class="icon anm anm-search-plus-r"></i>
                                                     </a>
                                                     <div class="wishlist-btn">
-                                                        <a class="wishlist add-to-wishlist" href="wishlist.html">
+                                                        <a class="wishlist add-to-wishlist" href="wishlist.php">
                                                             <i class="icon anm anm-heart-l"></i>
                                                         </a>
                                                     </div>
@@ -256,7 +256,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                                             <div class="product-details text-center">
                                                 <!-- product name -->
                                                 <div class="product-name">
-                                                    <a href="./product-accordion.html"><?php echo $item['item_name'] ?? "Unknown" ?></a>
+                                                    <a href="./product-accordion.php"><?php echo $item['item_name'] ?? "Unknown" ?></a>
                                                 </div>
                                                 <!-- End product name -->
                                                 <!-- product price -->
@@ -299,7 +299,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                                         <!-- start product image -->
                                         <div class="product-image">
                                             <!-- start product image -->
-                                            <a href="./product-accordion.html">
+                                            <a href="./product-accordion.php">
                                                 <!-- image -->
                                                 <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image10.jpg" src="assets/images/product-images/product-image10.jpg" alt="image" title="product" />
                                                 <!-- End image -->
@@ -326,13 +326,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                                                     <i class="icon anm anm-search-plus-r"></i>
                                                 </a>
                                                 <div class="wishlist-btn">
-                                                    <a class="wishlist add-to-wishlist" href="wishlist.html">
+                                                    <a class="wishlist add-to-wishlist" href="wishlist.php">
                                                         <i class="icon anm anm-heart-l"></i>
-                                                    </a>
-                                                </div>
-                                                <div class="compare-btn">
-                                                    <a class="compare add-to-compare" href="compare.html" title="Add to Compare">
-                                                        <i class="icon anm anm-random-r"></i>
                                                     </a>
                                                 </div>
                                             </div>
@@ -344,7 +339,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                                         <div class="product-details text-center">
                                             <!-- product name -->
                                             <div class="product-name">
-                                                <a href="./product-accordion.html">Zipper Jacket</a>
+                                                <a href="./product-accordion.php">Zipper Jacket</a>
                                             </div>
                                             <!-- End product name -->
                                             <!-- product price -->
@@ -371,7 +366,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                                         <!-- start product image -->
                                         <div class="product-image">
                                             <!-- start product image -->
-                                            <a href="./product-accordion.html">
+                                            <a href="./product-accordion.php">
                                                 <!-- image -->
                                                 <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image11.jpg" src="assets/images/product-images/product-image11.jpg" alt="image" title="product" />
                                                 <!-- End image -->
@@ -392,12 +387,12 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                                                     <i class="icon anm anm-search-plus-r"></i>
                                                 </a>
                                                 <div class="wishlist-btn">
-                                                    <a class="wishlist add-to-wishlist" href="wishlist.html">
+                                                    <a class="wishlist add-to-wishlist" href="wishlist.php">
                                                         <i class="icon anm anm-heart-l"></i>
                                                     </a>
                                                 </div>
                                                 <div class="compare-btn">
-                                                    <a class="compare add-to-compare" href="compare.html" title="Add to Compare">
+                                                    <a class="compare add-to-compare" href="compare.php" title="Add to Compare">
                                                         <i class="icon anm anm-random-r"></i>
                                                     </a>
                                                 </div>
@@ -410,7 +405,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                                         <div class="product-details text-center">
                                             <!-- product name -->
                                             <div class="product-name">
-                                                <a href="./product-accordion.html">Azur Bracelet in Blue Azurite</a>
+                                                <a href="./product-accordion.php">Azur Bracelet in Blue Azurite</a>
                                             </div>
                                             <!-- End product name -->
                                             <!-- product price -->
@@ -433,7 +428,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                                         <!-- start product image -->
                                         <div class="product-image">
                                             <!-- start product image -->
-                                            <a href="./product-accordion.html">
+                                            <a href="./product-accordion.php">
                                                 <!-- image -->
                                                 <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image12.jpg" src="assets/images/product-images/product-image12.jpg" alt="image" title="product" />
                                                 <!-- End image -->
@@ -454,12 +449,12 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                                                     <i class="icon anm anm-search-plus-r"></i>
                                                 </a>
                                                 <div class="wishlist-btn">
-                                                    <a class="wishlist add-to-wishlist" href="wishlist.html">
+                                                    <a class="wishlist add-to-wishlist" href="wishlist.php">
                                                         <i class="icon anm anm-heart-l"></i>
                                                     </a>
                                                 </div>
                                                 <div class="compare-btn">
-                                                    <a class="compare add-to-compare" href="compare.html" title="Add to Compare">
+                                                    <a class="compare add-to-compare" href="compare.php" title="Add to Compare">
                                                         <i class="icon anm anm-random-r"></i>
                                                     </a>
                                                 </div>
@@ -472,7 +467,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                                         <div class="product-details text-center">
                                             <!-- product name -->
                                             <div class="product-name">
-                                                <a href="./product-accordion.html">Bi-Goutte Earrings</a>
+                                                <a href="./product-accordion.php">Bi-Goutte Earrings</a>
                                             </div>
                                             <!-- End product name -->
                                             <!-- product price -->
@@ -494,7 +489,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                                         <!-- start product image -->
                                         <div class="product-image">
                                             <!-- start product image -->
-                                            <a href="./product-accordion.html">
+                                            <a href="./product-accordion.php">
                                                 <!-- image -->
                                                 <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image13.jpg" src="assets/images/product-images/product-image13.jpg" alt="image" title="product" />
                                                 <!-- End image -->
@@ -515,12 +510,12 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                                                     <i class="icon anm anm-search-plus-r"></i>
                                                 </a>
                                                 <div class="wishlist-btn">
-                                                    <a class="wishlist add-to-wishlist" href="wishlist.html">
+                                                    <a class="wishlist add-to-wishlist" href="wishlist.php">
                                                         <i class="icon anm anm-heart-l"></i>
                                                     </a>
                                                 </div>
                                                 <div class="compare-btn">
-                                                    <a class="compare add-to-compare" href="compare.html" title="Add to Compare">
+                                                    <a class="compare add-to-compare" href="compare.php" title="Add to Compare">
                                                         <i class="icon anm anm-random-r"></i>
                                                     </a>
                                                 </div>
@@ -534,7 +529,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                                         <div class="product-details text-center">
                                             <!-- product name -->
                                             <div class="product-name">
-                                                <a href="./product-accordion.html">Ashton Necklace</a>
+                                                <a href="./product-accordion.php">Ashton Necklace</a>
                                             </div>
                                             <!-- End product name -->
                                             <!-- product price -->
@@ -557,7 +552,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                                         <!-- start product image -->
                                         <div class="product-image">
                                             <!-- start product image -->
-                                            <a href="./product-accordion.html">
+                                            <a href="./product-accordion.php">
                                                 <!-- image -->
                                                 <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image14.jpg" src="assets/images/product-images/product-image14.jpg" alt="image" title="product" />
                                                 <!-- End image -->
@@ -578,12 +573,12 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                                                     <i class="icon anm anm-search-plus-r"></i>
                                                 </a>
                                                 <div class="wishlist-btn">
-                                                    <a class="wishlist add-to-wishlist" href="wishlist.html">
+                                                    <a class="wishlist add-to-wishlist" href="wishlist.php">
                                                         <i class="icon anm anm-heart-l"></i>
                                                     </a>
                                                 </div>
                                                 <div class="compare-btn">
-                                                    <a class="compare add-to-compare" href="compare.html" title="Add to Compare">
+                                                    <a class="compare add-to-compare" href="compare.php" title="Add to Compare">
                                                         <i class="icon anm anm-random-r"></i>
                                                     </a>
                                                 </div>
@@ -596,7 +591,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                                         <div class="product-details text-center">
                                             <!-- product name -->
                                             <div class="product-name">
-                                                <a href="./product-accordion.html">Ara Ring</a>
+                                                <a href="./product-accordion.php">Ara Ring</a>
                                             </div>
                                             <!-- End product name -->
                                             <!-- product price -->
@@ -619,7 +614,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                                         <!-- start product image -->
                                         <div class="product-image">
                                             <!-- start product image -->
-                                            <a href="./product-accordion.html">
+                                            <a href="./product-accordion.php">
                                                 <!-- image -->
                                                 <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image15.jpg" src="assets/images/product-images/product-image15.jpg" alt="image" title="product" />
                                                 <!-- End image -->
@@ -640,12 +635,12 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                                                     <i class="icon anm anm-search-plus-r"></i>
                                                 </a>
                                                 <div class="wishlist-btn">
-                                                    <a class="wishlist add-to-wishlist" href="wishlist.html">
+                                                    <a class="wishlist add-to-wishlist" href="wishlist.php">
                                                         <i class="icon anm anm-heart-l"></i>
                                                     </a>
                                                 </div>
                                                 <div class="compare-btn">
-                                                    <a class="compare add-to-compare" href="compare.html" title="Add to Compare">
+                                                    <a class="compare add-to-compare" href="compare.php" title="Add to Compare">
                                                         <i class="icon anm anm-random-r"></i>
                                                     </a>
                                                 </div>
@@ -658,7 +653,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                                         <div class="product-details text-center">
                                             <!-- product name -->
                                             <div class="product-name">
-                                                <a href="./product-accordion.html">Ara Ring</a>
+                                                <a href="./product-accordion.php">Ara Ring</a>
                                             </div>
                                             <!-- End product name -->
                                             <!-- product price -->

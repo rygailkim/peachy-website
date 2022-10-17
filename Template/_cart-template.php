@@ -89,7 +89,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                     </tr>
                             <?php
                                     return $item['item_price'];
-                                }, $cart); //closing array_map function
+                                }, $cart);
                             endforeach;
                             // print_r($subTotal);
                             ?>
