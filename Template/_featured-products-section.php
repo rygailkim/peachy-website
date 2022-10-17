@@ -229,9 +229,13 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                                                 <form class="variants add" method="post">
                                                     <input type="hidden" name="item_id" value="<?php echo $item['item_id'] ?? '1'; ?>">
                                                     <input type="hidden" name="user_id" value="<?php echo 1; ?>">
-                                                    <button name="featured_products_submit" class="btn btn-addto-cart" type="submit" tabindex="0">
-                                                        Add To Cart
-                                                    </button>
+                                                    <?php
+                                                    if (in_array($item['item_id'], $Cart->getCartId($product->getData('cart')) ?? [])) {
+                                                        echo '<button type="submit" disabled class="btn btn btn-addto-cart">In the Cart</button>';
+                                                    } else {
+                                                        echo '<button name="featured_products_submit" class="btn btn-addto-cart" type="submit" tabindex="0"> Add To Cart </button>';
+                                                    }
+                                                    ?>
                                                 </form>
                                                 <div class="button-set">
                                                     <a href="javascript:void(0)" title="Quick View" class="quick-view-popup quick-view" data-toggle="modal" data-target="#content_quickview">

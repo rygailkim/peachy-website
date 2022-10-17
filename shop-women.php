@@ -13,7 +13,7 @@ include('header.php')
     <div class="collection-header">
         <div class="collection-hero">
             <div class="collection-hero__image">
-                <img class="blur-up lazyload" data-src="assets/images/cat-women2.jpg" src="assets/images/cat-women2.jpg" alt="Women" title="Women" />
+                <img class="blur-up lazyload" data-src="assets/images/shop-women.jpg" src="assets/images/cat-women2.jpg" alt="Women" title="Women" />
             </div>
             <div class="collection-hero__title-wrapper">
                 <h1 class="collection-hero__title page-width">Women</h1>
@@ -69,7 +69,7 @@ include('header.php')
                                 <div class="col-6 col-sm-6 col-md-4 col-lg-3 grid-view-item style2 item">
                                     <div class="grid-view_image">
                                         <!-- start product image -->
-                                        <a href="product-accordion.php" class="grid-view-item__link">
+                                        <a href="<?php printf('%s?item_id=%s', 'product.php',  $item['item_id']); ?>" class="grid-view-item__link">
                                             <!-- image -->
                                             <img class="grid-view-item__image primary blur-up lazyload" data-src="<?php echo $item['item_image'] ?? "./assets/images/product-images/product-image1" ?>" src="<?php echo $item['item_image'] ?? "./assets/images/product-images/product-image1" ?>" alt="image" title="product" />
                                             <!-- End image -->

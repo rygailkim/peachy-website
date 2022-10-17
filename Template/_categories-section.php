@@ -12,7 +12,7 @@
                                 <a href="#">
                                     <img src="assets/images/collection/image-banner-home15-1.jpg" alt="200+ NEW ARRIVALS" title="200+ NEW ARRIVALS" class="blur-up lazyload" />
                                     <div class="ttl">
-                                        <h3>Y2K and Trendy Fashion</h3>
+                                        <h3>Y2K and Trendy Fashion</h3></br>
                                         Discover the latest designer and modern fashion and
                                         accessories from around the world.
                                     </div>

@@ -21,7 +21,7 @@ foreach ($product->getData() as $item) :
                         <div class="product-details-img product-single__photos bottom">
                             <div class="zoompro-wrap product-zoom-right pl-20">
                                 <div class="zoompro-span">
-                                    <img class="blur-up lazyload zoompro" data-zoom-image="<?php echo $item['item_image'] ?? "./assets/images/product-images/product-image1" ?>" alt="" src="<?php echo $item['item_image'] ?? "./assets/images/product-images/product-image1" ?>" />
+                                    <img class="blur-up lazyload zoompro" id="main-image" data-zoom-image="<?php echo $item['item_image'] ?? "./assets/images/product-images/product-image1" ?>" alt="" src="<?php echo $item['item_image'] ?? "./assets/images/product-images/product-image1" ?>" />
                                 </div>
                                 <div class="product-labels">
                                     <!-- <span class="lbl on-sale">Sale</span><span class="lbl pr-label1">new</span> -->
@@ -114,35 +114,49 @@ foreach ($product->getData() as $item) :
                             <form method="post" action="./cart/add" id="product_form_10508262282" accept-charset="UTF-8" class="product-form product-form-product-template hidedropdown" enctype="multipart/form-data">
                                 <div class="swatch clearfix swatch-0 option1" data-option-index="0">
                                     <div class="product-form__item">
-                                        <label class="header">Color: <span class="slVariant">Red</span></label>
-                                        <div data-value="Black" class="swatch-element color black available">
-                                            <input class="swatchInput" id="swatch-0-black" type="radio" name="option-0" value="Black" /><label class="swatchLbl color small" for="swatch-0-black" style="background-color: black" title="Black"></label>
-                                        </div>
-                                        <div data-value="Maroon" class="swatch-element color maroon available">
-                                            <input class="swatchInput" id="swatch-0-maroon" type="radio" name="option-0" value="Maroon" /><label class="swatchLbl color small" for="swatch-0-maroon" style="background-color: maroon" title="Maroon"></label>
+                                        <label class="header">Color: <span class="slVariant" id="slVariant">Pink</span></label>
+                                        <div data-value="Pink" class="swatch-element color pink available">
+                                            <input class="swatchInput" id="swatch-0-pink" type="radio" name="option-0" value="Pink" onclick="changeImage()" checked /><label class=" swatchLbl color small" for="swatch-0-pink" style="background-color: pink" title="Pink"></label>
                                         </div>
                                         <div data-value="Blue" class="swatch-element color blue available">
-                                            <input class="swatchInput" id="swatch-0-blue" type="radio" name="option-0" value="Blue" /><label class="swatchLbl color small" for="swatch-0-blue" style="background-color: blue" title="Blue"></label>
+                                            <input class="swatchInput" id="swatch-0-blue" type="radio" name="option-0" value="Blue" onclick="changeImage()" /><label class="swatchLbl color small" for="swatch-0-blue" style="background-color: blue" title="Blue"></label>
                                         </div>
-                                        <div data-value="Dark Green" class="swatch-element color dark-green available">
-                                            <input class="swatchInput" id="swatch-0-dark-green" type="radio" name="option-0" value="Dark Green" /><label class="swatchLbl color small" for="swatch-0-dark-green" style="background-color: darkgreen" title="Dark Green"></label>
+                                        <div data-value="Light Blue" class="swatch-element color lightblue available">
+                                            <input class="swatchInput" id="swatch-0-light-blue" type="radio" name="option-0" value="Light Blue" onclick="changeImage()" /><label class="swatchLbl color small" for="swatch-0-light-blue" style="background-color: lightblue" title="Light Blue"></label>
+                                        </div>
+                                        <div data-value="Green" class="swatch-element color green available">
+                                            <input class="swatchInput" id="swatch-0-green" type="radio" name="option-0" value="Green" onclick="changeImage()" /><label class="swatchLbl color small" for="swatch-0-green" style="background-color: green" title="Green"></label>
+                                        </div>
+                                        <div data-value="Gray" class="swatch-element color gray available">
+                                            <input class="swatchInput" id="swatch-0-gray" type="radio" name="option-0" value="Gray" onclick="changeImage()" /><label class="swatchLbl color small" for="swatch-0-gray" style="background-color: gray" title="Gray"></label>
+                                        </div>
+                                        <div data-value="Orange" class="swatch-element color orange available">
+                                            <input class="swatchInput" id="swatch-0-orange" type="radio" name="option-0" value="Orange" onclick="changeImage()" /><label class="swatchLbl color small" for="swatch-0-gray" style="background-color: orange" title="Orange"></label>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swatch clearfix swatch-1 option2" data-option-index="1">
                                     <div class="product-form__item">
-                                        <label class="header">Size: <span class="slVariant">XS</span></label>
+                                        <label class="header">Size: <span class="slVariant" id='sizeVariant'>XS</span></label>
                                         <div data-value="XS" class="swatch-element xs available">
-                                            <input class="swatchInput" id="swatch-1-xs" type="radio" name="option-1" value="XS" />
-                                            <label class="swatchLbl small" for="swatch-1-xs" title="XS">XS</label>
+                                            <input class="swatchInput" id="swatch-1-xs" type="radio" name="option-1" value="XS" onclick="changeSize()" />
+                                            <label class="swatchLbl small" for="swatch-1-xs" title="XS">M</label>
                                         </div>
                                         <div data-value="S" class="swatch-element s available">
-                                            <input class="swatchInput" id="swatch-1-s" type="radio" name="option-1" value="S" />
+                                            <input class="swatchInput" id="swatch-1-s" type="radio" name="option-1" value="S" onclick="changeSize()" />
                                             <label class="swatchLbl small" for="swatch-1-s" title="S">S</label>
                                         </div>
                                         <div data-value="M" class="swatch-element m available">
-                                            <input class="swatchInput" id="swatch-1-m" type="radio" name="option-1" value="M" />
+                                            <input class="swatchInput" id="swatch-1-m" type="radio" name="option-1" value="M" checked onclick="changeSize()" />
                                             <label class="swatchLbl small" for="swatch-1-m" title="M">M</label>
+                                        </div>
+                                        <div data-value="L" class="swatch-element l available">
+                                            <input class="swatchInput" id="swatch-1-l" type="radio" name="option-1" value="L" onclick="changeSize()" />
+                                            <label class="swatchLbl small" for="swatch-1-l" title="L">L</label>
+                                        </div>
+                                        <div data-value="XL" class="swatch-element xl available">
+                                            <input class="swatchInput" id="swatch-1-xl" type="radio" name="option-1" value="XL" onclick="changeSize()" />
+                                            <label class="swatchLbl small" for="swatch-1-xl" title="XL">XL</label>
                                         </div>
                                     </div>
                                 </div>
@@ -517,3 +531,52 @@ foreach ($product->getData() as $item) :
     endif;
 endforeach;
         ?>
+
+        <script>
+            function changeImage() {
+                var mainImage = document.getElementById('main-image')
+                if (document.getElementById('swatch-0-pink').checked) {
+                    $('#main-image').attr('src', './assets/images/product-detail-page/camelia-reversible-big1.jpg');
+                    $('#main-image').attr('data-zoom-image', './assets/images/product-detail-page/camelia-reversible-big1.jpg');
+                    $('#slVariant').text('Pink');
+                }
+                if (document.getElementById('swatch-0-blue').checked) {
+                    $('#main-image').attr('src', './assets/images/product-detail-page/camelia-reversible-big7.jpg');
+                    $('#main-image').attr('data-zoom-image', './assets/images/product-detail-page/camelia-reversible-big7.jpg');
+                    $('#slVariant').text('Blue');
+                }
+                if (document.getElementById('swatch-0-light-blue').checked) {
+                    $('#main-image').attr('src', './assets/images/product-detail-page/camelia-reversible-big6.jpg');
+                    $('#main-image').attr('data-zoom-image', './assets/images/product-detail-page/camelia-reversible-big6.jpg');
+                    $('#slVariant').text('Light Blue');
+                }
+                if (document.getElementById('swatch-0-green').checked) {
+                    $('#main-image').attr('src', './assets/images/product-detail-page/camelia-reversible-big8.jpg');
+                    $('#main-image').attr('data-zoom-image', './assets/images/product-detail-page/camelia-reversible-big8.jpg');
+                    $('#slVariant').text('Green');
+                }
+                if (document.getElementById('swatch-0-gray').checked) {
+                    $('#main-image').attr('src', './assets/images/product-detail-page/camelia-reversible-big9.jpg');
+                    $('#main-image').attr('data-zoom-image', './assets/images/product-detail-page/camelia-reversible-big9.jpg');
+                    $('#slVariant').text('Gray');
+                }
+            }
+
+            function changeSize() {
+                if (document.getElementById('swatch-1-xs').checked) {
+                    $('#sizeVariant').text('XS');
+                }
+                if (document.getElementById('swatch-1-s').checked) {
+                    $('#sizeVariant').text('S');
+                }
+                if (document.getElementById('swatch-1-m').checked) {
+                    $('#sizeVariant').text('M');
+                }
+                if (document.getElementById('swatch-1-l').checked) {
+                    $('#sizeVariant').text('L');
+                }
+                if (document.getElementById('swatch-1-xl').checked) {
+                    $('#sizeVariant').text('XL');
+                }
+            }
+        </script>

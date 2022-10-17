@@ -64,14 +64,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                         <td class="cart__update-wrapper cart-flex-item text-right">
                                             <div class="cart__qty text-center">
                                                 <div class="qtyField">
-                                                    <a class="qtyBtn minus" href="javascript:void(0);"><i class="icon icon-minus"></i></a>
+                                                    <a class="qtyBtn minus" id="qty_down"><i class="icon icon-minus"></i></a>
                                                     <input class="cart__qty-input qty" type="text" name="updates[]" id="qty" value="1" pattern="[0-9]*" />
-                                                    <a class="qtyBtn plus" href="javascript:void(0);"><i class="icon icon-plus"></i></a>
+                                                    <a class="qtyBtn plus" id="qty_up"><i class="icon icon-plus"></i></a>
                                                 </div>
+
+                                                <!-- <button data-id="<?php echo $item['item_id'] ?? '0'; ?>" class="qty-down border bg-light"><i class="icon icon-minus"></i></button>
+                                                <input type="text" data-id="<?php echo $item['item_id'] ?? '0'; ?>" class="qty_input border px-2 w-100 bg-light" disabled value="1" placeholder="1">
+                                                <button class="qty-up border bg-light" data-id="<?php echo $item['item_id'] ?? '0'; ?>"><i class="icon icon-plus"></i></button> -->
+
                                             </div>
                                         </td>
                                         <td class="text-right small--hide cart-price">
-                                            <div><span class="money">₱735.00</span></div>
+                                            <div><span class="money">₱<?php echo $item['item_price'] ?? "0.00" ?></span></div>
                                         </td>
                                         <td class="text-center small--hide">
                                             <form method="post">
